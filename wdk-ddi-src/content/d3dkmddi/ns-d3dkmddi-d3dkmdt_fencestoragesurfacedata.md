@@ -54,7 +54,7 @@ The **D3DKMDT_FENCESTORAGESURFACEDATA** structure describes the memory segments 
 
 ### -field FenceStorageValueType
 
-[in] A [**DXGKARG_FENCESTORAGEVALUETYPE**](ns-d3dkmddi-dxgkarg_fencestoragevaluetype.md) value that specifies the type of the native fence value.
+[in] A [**DXGKARG_FENCESTORAGEVALUETYPE**](../d3dkmdt/ne-d3dkmdt-dxgkarg_fencestoragevaluetype.md) value that specifies the type of the native fence value.
 
 ### -field FenceStorageType
 
@@ -85,7 +85,7 @@ The **D3DKMDT_FENCESTORAGESURFACEDATA** structure describes the memory segments 
 
 When the OS calls the kernel-mode driver's [**DxgkDdiGetStandardAllocation**](nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata.md) function with a standard allocation type of [**D3DKMDT_STANDARDALLOCATION_FENCESTORAGE**](../d3dkmdt/ne-d3dkmdt-_d3dkmdt_standardallocation_type.md), the driver must return the memory segments where the fence storage should be placed in **D3DKMDT_FENCESTORAGESURFACEDATA**.
 
-Based on the input fields, the driver needs to fill the following allocation information in [**AllocationInfo**]((ns-d3dkmddi-_dxgk_allocationinfo.md):
+Based on the input fields, the driver needs to fill the following allocation information in [**AllocationInfo**](ns-d3dkmddi-_dxgk_allocationinfo.md):
 
 * **SupportedWriteSegmentSet**
 * **EvictionSegmentSet**
@@ -111,7 +111,7 @@ For more information, see [Native GPU fence objects](/windows-hardware/drivers/d
 
 [**DXGKARG_FENCESTORAGEFLAGS**](ns-d3dkmddi-dxgkarg_fencestorageflags.md)
 
-[**DXGKARG_FENCESTORAGEVALUETYPE**](ns-d3dkmddi-dxgkarg_fencestoragevaluetype.md)
+[**DXGKARG_FENCESTORAGEVALUETYPE**](../d3dkmdt/ne-d3dkmdt-dxgkarg_fencestoragevaluetype.md)
 
 [**DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA**](ns-d3dkmddi-_dxgkarg_getstandardallocationdriverdata.md)
 

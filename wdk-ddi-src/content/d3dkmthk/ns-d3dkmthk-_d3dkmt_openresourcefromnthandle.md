@@ -117,7 +117,7 @@ A handle to the synchronization object in this process.
 
 ## -see-also
 
-[**D3DDDI_OPENALLOCATIONINFO2**](ns-d3dukmdt-_d3dddi_openallocationinfo2.md)
+[**D3DDDI_OPENALLOCATIONINFO2**](../d3dukmdt/ns-d3dukmdt-_d3dddi_openallocationinfo2.md)
 
 [**D3DKMTOpenNtHandleFromName**](nf-d3dkmthk-d3dkmtopennthandlefromname.md)
 

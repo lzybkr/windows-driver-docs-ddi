@@ -428,7 +428,7 @@ The GPU clock counter at the time of the VSYNC interrupt. Combined with GpuFrequ
 
 ### -field NativeFenceSignaled
 
-[in] Structure used when [**InterruptType**](d3dkmddi/ne-d3dkmddi-_dxgk_interrupt_type.md) is **DXGK_INTERRUPT_NATIVE_FENCE_SIGNALED**. For more information about native fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects). Supported starting with Windows 11, version 24H2 (WDDM 3.2).
+[in] Structure used when [**InterruptType**](ne-d3dkmddi-_dxgk_interrupt_type.md) is **DXGK_INTERRUPT_NATIVE_FENCE_SIGNALED**. For more information about native fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects). Supported starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ### -field NativeFenceSignaled.NodeOrdinal
 
