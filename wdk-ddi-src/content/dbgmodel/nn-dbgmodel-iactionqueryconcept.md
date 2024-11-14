@@ -1,7 +1,7 @@
 ---
 UID: NN:dbgmodel.IActionQueryConcept
 tech.root: debugger
-title: IActionQueryConcept interface (dbgmodel.h)
+title: IActionQueryConcept (dbgmodel.h)
 ms.date:  10/31/2024
 targetos: Windows
 description: A concept which is automatically implemented by the data model for any object which has (or can have) actions on it.  (dbgmodel.h)
@@ -47,17 +47,6 @@ Clients should *NEVER* implement this concept -- only query for it.
 ## -inheritance
 
 IActionQueryConcept inherits from IUnknown.
-
-## -methods
-
-The **IActionQueryConcept** interface has these methods.
-
-| &nbsp; |
-|-----------------|
-| [IActionQueryConcept::AddRef](../dbgmodel/nf-dbgmodel-iactionqueryconcept-addref.md) <br><br>The AddRef method increments the reference count for an interface on an object. This method belongs to the IActionQueryConcept interface. |
-| [IActionQueryConcept::EnumerateActions](../dbgmodel/nf-dbgmodel-iactionqueryconcept-enumerateactions.md) <br><br>Returns an enumerator to all actions on any object implementing the IActionQueryConcept interface. |
-| [IActionQueryConcept::QueryInterface](../dbgmodel/nf-dbgmodel-iactionqueryconcept-queryinterface.md) <br><br>The IActionQueryConcept::QueryInterface method retrieves pointers to the supported interfaces on an object. |
-| [IActionQueryConcept::Release](../dbgmodel/nf-dbgmodel-iactionqueryconcept-release.md) <br><br>The IActionQueryConcept::Release method decrements the reference count for an interface on an object. |
 
 ## -remarks
 

@@ -2,7 +2,7 @@
 UID: NN:dbgmodel.IActionableConcept
 tech.root: debugger
 title: IActionableConcept (dbgmodel.h)
-ms.date: 11/11/2024
+ms.date: 10/31/2024
 targetos: Windows
 description: A concept mechanism for implementing actions.  Clients may choose to either implement this interface or place appropriate metadata on effective void(void) methods. (dbgmodel.h)
 prerelease: false
@@ -47,18 +47,6 @@ concept.  Rather, they should query for IActionQueryConcept.
 ## -inheritance
 
 IActionableConcept inherits from IUnknown.
-
-## -methods
-
-The **IDataModelManager** interface has these methods.
-
-| &nbsp; |
-|-----------------|
-| [IActionableConcept::AddRef](../dbgmodel/nf-dbgmodel-iactionableconcept-addref.md) <br><br>The AddRef method increments the reference count for an interface on an object. This method belongs to the IActionableConcept interface. |
-| [IActionableConcept::EnumerateActions](../dbgmodel/nf-dbgmodel-iactionableconcept-enumerateactions.md) <br><br>The IActionableConcept::EnumerateActions method enumerates the actions that are available for the object. |
-| [IActionableConcept::QueryInterface](../dbgmodel/nf-dbgmodel-iactionableconcept-queryinterface.md) <br><br>The IActionableConcept::QueryInterface method retrieves pointers to the supported interfaces on an object. |
-| [IActionableConcept::Release](../dbgmodel/nf-dbgmodel-iactionableconcept-release.md) <br><br>The IActionableConcept::Release method decrements the reference count for an interface on an object. |
-
 
 ## -remarks
 

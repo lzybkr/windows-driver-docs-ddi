@@ -2,7 +2,7 @@
 UID: NN:dbgmodel.IActionEnumerator
 tech.root: debugger
 title: IActionEnumerator (dbgmodel.h)
-ms.date: 11/14/2024
+ms.date: 10/31/2024
 targetos: Windows
 description:  An enumerator for actions on an object. (dbgmodel.h)
 prerelease: false
@@ -43,18 +43,6 @@ An enumerator for actions on an object.
 ## -inheritance
 
 IActionEnumerator inherits from IUnknown.
-
-## -methods
-
-The **IActionEnumerator** interface has these methods.
-
-| &nbsp; |
-|-----------------|
-| [IActionEnumerator::AddRef](../dbgmodel/nf-dbgmodel-iactionenumerator-addref.md) <br><br>The AddRef method increments the reference count for an interface on an object. This method belongs to the IActionEnumerator interface. |
-| [IActionEnumerator::GetNext](../dbgmodel/nf-dbgmodel-iactionenumerator-getnext.md) <br><br> The IActionEnumerator::GetNext method gets the next action on the object. |
-| [IActionEnumerator::QueryInterface](../dbgmodel/nf-dbgmodel-iactionenumerator-queryinterface.md) <br><br>The IActionEnumerator::QueryInterface method retrieves pointers to the supported interfaces on an object. |
-| [IActionEnumerator::Release](../dbgmodel/nf-dbgmodel-iactionenumerator-release.md) <br><br>The IActionEnumerator::Release method decrements the reference count for an interface on an object. |
-| [IActionEnumerator::Reset](../dbgmodel/nf-dbgmodel-iactionenumerator-reset.md) <br><br>The IActionEnumerator::Reset method resets the enumerator to the first action.  |
 
 ## -remarks
 
