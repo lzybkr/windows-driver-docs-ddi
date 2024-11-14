@@ -46,6 +46,20 @@ helpviewer_keywords:
 
 Retrieves the next action available for the object that implements the IActionEnumerator interface.
 
+# -syntax
+
+```cpp
+STDMETHOD(GetNext)(
+    THIS_
+    _Out_ BSTR *keyName,
+    _Out_ BSTR *actionName,
+    _Out_ BSTR *actionDescription,
+    _Out_ bool *actionIsDefault,
+    _COM_Outptr_opt_ IModelObject **actionMethod,
+    _COM_Outptr_opt_ IKeyStore **metadata
+    ) PURE;
+```
+
 ## -parameters
 
 ### -param keyName

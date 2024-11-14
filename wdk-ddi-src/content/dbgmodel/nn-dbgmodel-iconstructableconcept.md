@@ -2,7 +2,7 @@
 UID: NN:dbgmodel.IConstructableConcept
 tech.root: debugger
 title: IConstructableConcept (dbgmodel.h)
-ms.date: 10/31/2024
+ms.date: 11/14/2024
 targetos: Windows
 description: A concept that a data model can support in order to allow for construction of the object. (dbgmodel.h)
 prerelease: false
@@ -46,7 +46,16 @@ Such a data model *MUST* support IDataModelConcept and *MUST* be registered unde
 
 IConstructableConcept inherits from IUnknown.
 
-## -remarks
+## -methods
+
+The **IConstructableConcept** interface has these methods.
+
+| &nbsp; |
+|-----------------|
+| [IConstructableConcept::AddRef](../dbgmodel/nf-dbgmodel-iconstructableconcept-addref.md) <br><br>The AddRef method increments the reference count for an interface on an object. This method belongs to the IConstructableConcept interface. |
+| [IConstructableConcept::CreateInstance](../dbgmodel/nf-dbgmodel-iconstructableconcept-createinstance.md) <br><br>The IConstructableConcept::CreateInstance method creates an instance of the object. |
+| [IConstructableConcept::QueryInterface](../dbgmodel/nf-dbgmodel-iconstructableconcept-queryinterface.md) <br><br>The IConstructableConcept::QueryInterface method retrieves pointers to the supported interfaces on an object. |
+| [IConstructableConcept::Release](../dbgmodel/nf-dbgmodel-iconstructableconcept-release.md) <br><br>The IConstructableConcept::Release method decrements the reference count for an interface on an object. |
 
 ## -see-also
 
