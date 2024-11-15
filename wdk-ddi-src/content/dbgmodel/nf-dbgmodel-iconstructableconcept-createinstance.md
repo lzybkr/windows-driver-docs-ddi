@@ -46,16 +46,6 @@ helpviewer_keywords:
 
 Creates an instance of the object or model implementing the IConstructableConcept interface.
 
-# -syntax
-
-```cpp
-STDMETHOD(CreateInstance)(
-    THIS_
-    _In_ ULONG64 argCount,
-    _In_reads_(argCount) IModelObject **ppArguments,
-    _COM_Outptr_ IModelObject **ppInstance
-    ) PURE;
-```
 
 ## -parameters
 

@@ -46,15 +46,6 @@ helpviewer_keywords:
 
 Returns an enumerator to all actions on any object implementing the IActionQueryConcept interface.
 
-## -syntax
-
-```cpp
-STDMETHOD(EnumerateActions)(
-    THIS_
-    _In_ IModelObject *contextObject,
-    _COM_Outptr_ IActionEnumerator **actionEnumerator
-    ) PURE;
-```
 
 ## -parameters
 

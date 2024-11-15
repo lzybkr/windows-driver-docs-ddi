@@ -48,14 +48,6 @@ Retrieves pointers to the supported interfaces on an object. This method calls I
 
 For more information, see [IUnknown::QueryInterface](/windows/win32/api/Unknwn/nf-unknwn-iunknown-queryinterface(refiid_void)) and [Introduction to COM](/cpp/atl/introduction-to-com).
 
-## -syntax
-
-```cpp
-HRESULT QueryInterface(
-  REFIID iid,
-  PVOID  *iface
-);
-```
 
 ## -parameters
 
