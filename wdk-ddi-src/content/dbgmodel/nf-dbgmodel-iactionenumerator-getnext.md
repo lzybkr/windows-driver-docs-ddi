@@ -58,7 +58,7 @@ Pointer which is set to the BSTR of the action's name.
 
 ### -param actionDescription
 
- Pointer which is set to the BSTR describing the action.
+Pointer which is set to the BSTR describing the action.
 
 ### -param actionIsDefault
 
@@ -66,11 +66,11 @@ Pointer to boolean value indicating if the retrieved action is the default actio
 
 ### -param actionMethod
 
-Pointer to pointer to IModelObject interface method for the action, optional parameter, may be null if it's not provided.
+Pointer to a pointer to IModelObject interface method for the action, optional parameter, may be null if it's not provided.
 
 ### -param metadta
 
-Pointer to pointer to IKeyStore interface for the action's metadata, optional parameter, may be null if it's not provided.
+Pointer to a pointer to IKeyStore interface for the action's metadata, optional parameter, may be null if it's not provided.
 
 ## -returns
 
