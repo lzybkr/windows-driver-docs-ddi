@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.CreateTypedObject
+UID: NF:dbgmodel.IDataModelManager4.CreateTypedObject
 tech.root: debugger
-title: IDataModelManager3::CreateTypedObject
-ms.date: 11/20/2024
+title: IDataModelManager4::CreateTypedObject
+ms.date: 12/03/2024
 targetos: Windows
 description: The CreateTypedObject method creates a representation of a native/language object in the address space of a debug target.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::CreateTypedObject
+ - IDataModelManager4::CreateTypedObject
 f1_keywords:
- - IDataModelManager3::CreateTypedObject
- - dbgmodel/IDataModelManager3::CreateTypedObject
+ - IDataModelManager4::CreateTypedObject
+ - dbgmodel/IDataModelManager4::CreateTypedObject
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -67,7 +67,6 @@ The newly created object will be returned here.
 ## -returns
 
 This method returns HRESULT that indicates success or failure.
-
 
 ## -remarks
 
@@ -109,4 +108,4 @@ if (SUCCEEDED(spHost.As(&spSym)))
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.UnregisterNamedModel
+UID: NF:dbgmodel.IDataModelManager4.UnregisterNamedModel
 tech.root: debugger
-title: IDataModelManager3::UnregisterNamedModel
-ms.date: 11/20/2024
+title: IDataModelManager4::UnregisterNamedModel
+ms.date: 12/03/2024
 targetos: Windows
 description: The UnregisterNamedModel method undoes a prior call to the RegisterNamedModel method.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::UnregisterNamedModel
+ - IDataModelManager4::UnregisterNamedModel
 f1_keywords:
- - IDataModelManager3::UnregisterNamedModel
- - dbgmodel/IDataModelManager3::UnregisterNamedModel
+ - IDataModelManager4::UnregisterNamedModel
+ - dbgmodel/IDataModelManager4::UnregisterNamedModel
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -73,4 +73,4 @@ if (SUCCEEDED(spManager->UnregisterNamedModel(
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

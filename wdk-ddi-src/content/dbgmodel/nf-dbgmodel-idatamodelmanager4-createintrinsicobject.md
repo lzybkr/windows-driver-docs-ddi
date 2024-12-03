@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.CreateIntrinsicObject
-tech.root: debugger
-title: IDataModelManager3::CreateIntrinsicObject
-ms.date: 11/20/2024
+UID: NF:dbgmodel.IDataModelManager4.CreateIntrinsicObject
+tech.root: debugger 
+title: IDataModelManager4::CreateIntrinsicObject
+ms.date: 12/03/2024
 targetos: Windows
 description: The CreateIntrinsicObject method is the method which boxes intrinsic values into IModelObject.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::CreateIntrinsicObject
+ - IDataModelManager4::CreateIntrinsicObject
 f1_keywords:
- - IDataModelManager3::CreateIntrinsicObject
- - dbgmodel/IDataModelManager3::CreateIntrinsicObject
+ - IDataModelManager4::CreateIntrinsicObject
+ - dbgmodel/IDataModelManager4::CreateIntrinsicObject
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -87,6 +87,7 @@ if (SUCCEEDED(spManager->CreateIntrinsicObject(ObjectIntrinsic, &vtValue, &spVal
 }
 ```
 
+
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

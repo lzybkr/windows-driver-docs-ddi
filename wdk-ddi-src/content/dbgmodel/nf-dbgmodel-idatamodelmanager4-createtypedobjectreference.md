@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.CreateTypedObjectReference
+UID: NF:dbgmodel.IDataModelManager4.CreateTypedObjectReference
 tech.root: debugger
-title: IDataModelManager3::CreateTypedObjectReference
-ms.date: 11/20/2024
+title: IDataModelManager4::CreateTypedObjectReference
+ms.date: 12/03/2024
 targetos: Windows
 description: The CreateTypedObjectReference method creates a reference to an underlying native/language construct.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::CreateTypedObjectReference
+ - IDataModelManager4::CreateTypedObjectReference
 f1_keywords:
- - IDataModelManager3::CreateTypedObjectReference
- - dbgmodel/IDataModelManager3::CreateTypedObjectReference
+ - IDataModelManager4::CreateTypedObjectReference
+ - dbgmodel/IDataModelManager4::CreateTypedObjectReference
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -98,4 +98,4 @@ if (SUCCEEDED(spManager->CreateTypedObjectReference(nullptr,
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

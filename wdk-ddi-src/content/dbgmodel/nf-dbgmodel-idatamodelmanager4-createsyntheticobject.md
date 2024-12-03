@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.CreateSyntheticObject
+UID: NF:dbgmodel.IDataModelManager4.CreateSyntheticObject
 tech.root: debugger
-title: IDataModelManager3::CreateSyntheticObject
-ms.date: 11/20/2024
+title: IDataModelManager4::CreateSyntheticObject
+ms.date: 12/03/2024
 targetos: Windows
 description: The CreateSyntheticObject method creates an empty data model object that is a dictionary of key/value/metadata tuples and concepts.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::CreateSyntheticObject
+ - IDataModelManager4::CreateSyntheticObject
 f1_keywords:
- - IDataModelManager3::CreateSyntheticObject
- - dbgmodel/IDataModelManager3::CreateSyntheticObject
+ - IDataModelManager4::CreateSyntheticObject
+ - dbgmodel/IDataModelManager4::CreateSyntheticObject
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -76,4 +76,4 @@ if (SUCCEEDED(spManager->CreateSyntheticObject(nullptr, &spNewObject)))
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

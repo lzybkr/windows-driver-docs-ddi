@@ -1,10 +1,10 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.AcquireNamedModel
+UID: NF:dbgmodel.IDataModelManager4.AcquireNamedModel
 tech.root: debugger
-title: IDataModelManager3::AcquireNamedModel
-ms.date: 11/20/2024
+title: IDataModelManager4::AcquireNamedModel
+ms.date: 12/03/2024
 targetos: Windows
-description: AcquireNamedModel looks up a well known model name and returns the data model registered by that name.
+description: The AcquireNamedModel method retrieves a data model registered under a given name.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::AcquireNamedModel
+ - IDataModelManager4::AcquireNamedModel
 f1_keywords:
- - IDataModelManager3::AcquireNamedModel
- - dbgmodel/IDataModelManager3::AcquireNamedModel
+ - IDataModelManager4::AcquireNamedModel
+ - dbgmodel/IDataModelManager4::AcquireNamedModel
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -43,7 +43,6 @@ helpviewer_keywords:
 ---
 
 ## -description
-
 AcquireNamedModel looks up a well known model name and returns the data model registered by that name.  Note that if there is no model registered by the supplied name, a stub will be created and returned to the caller. 
 
 Anything added to the stub will be added to the real object at the time a registration is made.
@@ -97,4 +96,4 @@ if (SUCCEEDED(spManager->AcquireNamedModel(L"Debugger.Models.Process",
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

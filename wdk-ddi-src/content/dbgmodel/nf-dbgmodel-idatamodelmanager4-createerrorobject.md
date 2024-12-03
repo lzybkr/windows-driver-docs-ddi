@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.CreateErrorObject
+UID: NF:dbgmodel.IDataModelManager4.CreateErrorObject
 tech.root: debugger
-title: IDataModelManager3::CreateErrorObject
-ms.date: 11/20/2024
+title: IDataModelManager4::CreateErrorObject
+ms.date: 12/03/2024
 targetos: Windows
 description: The CreateErrorObject method creates an error object.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::CreateErrorObject
+ - IDataModelManager4::CreateErrorObject
 f1_keywords:
- - IDataModelManager3::CreateErrorObject
- - dbgmodel/IDataModelManager3::CreateErrorObject
+ - IDataModelManager4::CreateErrorObject
+ - dbgmodel/IDataModelManager4::CreateErrorObject
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -88,7 +88,6 @@ if (SUCCEEDED(spManager->CreateErrorObject(
     // Indexers can do this.
 }
 ```
-
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

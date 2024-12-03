@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.CreateTypedIntrinsicObject
+UID: NF:dbgmodel.IDataModelManager4.CreateTypedIntrinsicObject
 tech.root: debugger
-title: IDataModelManager3::CreateTypedIntrinsicObject
-ms.date: 11/20/2024
+title: IDataModelManager4::CreateTypedIntrinsicObject
+ms.date: 12/03/2024
 targetos: Windows
 description: The CreateTypedIntrinsicObject method boxes intrinsic values together with a native/language type association into IModelObject.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::CreateTypedIntrinsicObject
+ - IDataModelManager4::CreateTypedIntrinsicObject
 f1_keywords:
- - IDataModelManager3::CreateTypedIntrinsicObject
- - dbgmodel/IDataModelManager3::CreateTypedIntrinsicObject
+ - IDataModelManager4::CreateTypedIntrinsicObject
+ - dbgmodel/IDataModelManager4::CreateTypedIntrinsicObject
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -105,4 +105,4 @@ if (SUCCEEDED(spManager->CreateTypedIntrinsicObject(&vtPtrValue, spPtrType.Get()
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

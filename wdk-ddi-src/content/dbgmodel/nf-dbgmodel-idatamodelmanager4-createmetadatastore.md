@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.CreateMetadataStore
+UID: NF:dbgmodel.IDataModelManager4.CreateMetadataStore
 tech.root: debugger
-title: IDataModelManager3::CreateMetadataStore
-ms.date: 11/20/2024
+title: IDataModelManager4::CreateMetadataStore
+ms.date: 12/03/2024
 targetos: Windows
 description: The CreateMetadataStore method creates a key store that is used to hold metadata that can be associated with properties and other values.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::CreateMetadataStore
+ - IDataModelManager4::CreateMetadataStore
 f1_keywords:
- - IDataModelManager3::CreateMetadataStore
- - dbgmodel/IDataModelManager3::CreateMetadataStore
+ - IDataModelManager4::CreateMetadataStore
+ - dbgmodel/IDataModelManager4::CreateMetadataStore
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -88,4 +88,4 @@ if (SUCCEEDED(spManager->CreateMetadataStore(nullptr, &spMetadata)))
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

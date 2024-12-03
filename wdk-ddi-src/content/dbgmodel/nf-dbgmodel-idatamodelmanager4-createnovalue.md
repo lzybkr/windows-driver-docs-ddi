@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.CreateNoValue
+UID: NF:dbgmodel.IDataModelManager4.CreateNoValue
 tech.root: debugger
-title: IDataModelManager3::CreateNoValue
-ms.date: 11/20/2024
+title: IDataModelManager4::CreateNoValue
+ms.date: 12/03/2024
 targetos: Windows
 description: The CreateNoValue method creates a "no value" object, boxes it into an IModelObject, and returns it.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::CreateNoValue
+ - IDataModelManager4::CreateNoValue
 f1_keywords:
- - IDataModelManager3::CreateNoValue
- - dbgmodel/IDataModelManager3::CreateNoValue
+ - IDataModelManager4::CreateNoValue
+ - dbgmodel/IDataModelManager4::CreateNoValue
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -43,6 +43,7 @@ helpviewer_keywords:
 ---
 
 ## -description
+
 
 The CreateNoValue method creates a "no value" object, boxes it into an [IModelObject](nn-dbgmodel-imodelobject.md), and returns it. The returned model object has a kind of ObjectNoValue. 
 
@@ -81,4 +82,4 @@ if (SUCCEEDED(spManager->CreateNoValue(&spNoValue)))
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

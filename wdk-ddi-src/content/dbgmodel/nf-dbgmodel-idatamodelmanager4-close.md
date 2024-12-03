@@ -1,10 +1,10 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.Close
+UID: NF:dbgmodel.IDataModelManager4.Close
 tech.root: debugger
-title: IDataModelManager3::Close
-ms.date: 11/20/2024
+title: IDataModelManager4::Close
+ms.date: 12/03/2024
 targetos: Windows
-description: The IDataModelManager3::Close method is called on the data model manager by an application (debugger) hosting the data model in order to start the shutdown process of the data model manager.
+description: 
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::Close
+ - IDataModelManager4::Close
 f1_keywords:
- - IDataModelManager3::Close
- - dbgmodel/IDataModelManager3::Close
+ - IDataModelManager4::Close
+ - dbgmodel/IDataModelManager4::Close
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -66,4 +66,4 @@ if (SUCCEEDED(spManager->Close()))
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

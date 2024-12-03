@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.RegisterModelForTypeSignature
+UID: NF:dbgmodel.IDataModelManager4.RegisterModelForTypeSignature
 tech.root: debugger
-title: IDataModelManager3::RegisterModelForTypeSignature
-ms.date: 11/20/2024
+title: IDataModelManager4::RegisterModelForTypeSignature
+ms.date: 12/03/2024
 targetos: Windows
 description: The RegisterModelForTypeSignature method registers a canonical visualizer for a given type signature.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::RegisterModelForTypeSignature
+ - IDataModelManager4::RegisterModelForTypeSignature
 f1_keywords:
- - IDataModelManager3::RegisterModelForTypeSignature
- - dbgmodel/IDataModelManager3::RegisterModelForTypeSignature
+ - IDataModelManager4::RegisterModelForTypeSignature
+ - dbgmodel/IDataModelManager4::RegisterModelForTypeSignature
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -131,4 +131,4 @@ if (SUCCEEDED(spHost.As(&spSym)))
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

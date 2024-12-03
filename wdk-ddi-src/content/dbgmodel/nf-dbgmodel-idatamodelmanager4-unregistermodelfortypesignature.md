@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.UnregisterModelForTypeSignature
+UID: NF:dbgmodel.IDataModelManager4.UnregisterModelForTypeSignature
 tech.root: debugger
-title: IDataModelManager3::UnregisterModelForTypeSignature
-ms.date: 11/20/2024
+title: IDataModelManager4::UnregisterModelForTypeSignature
+ms.date: 12/03/2024
 targetos: Windows
 description: The UnregisterModelForTypeSignature method undoes a prior call to the RegisterModelForTypeSignature method.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::UnregisterModelForTypeSignature
+ - IDataModelManager4::UnregisterModelForTypeSignature
 f1_keywords:
- - IDataModelManager3::UnregisterModelForTypeSignature
- - dbgmodel/IDataModelManager3::UnregisterModelForTypeSignature
+ - IDataModelManager4::UnregisterModelForTypeSignature
+ - dbgmodel/IDataModelManager4::UnregisterModelForTypeSignature
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -60,7 +60,6 @@ The type signature against which the data model given by the dataModel argument 
 
 This method returns HRESULT that indicates success or failure.
 
-
 ## -remarks
 
 **Sample Code**
@@ -84,4 +83,4 @@ if (SUCCEEDED(spManager->UnregisterModelForTypeSignature(spDataModelObject.Get()
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

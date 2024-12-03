@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.UnregisterExtensionForTypeSignature
+UID: NF:dbgmodel.IDataModelManager4.UnregisterExtensionForTypeSignature
 tech.root: debugger
-title: IDataModelManager3::UnregisterExtensionForTypeSignature
-ms.date: 11/20/2024
+title: IDataModelManager4::UnregisterExtensionForTypeSignature
+ms.date: 12/03/2024
 targetos: Windows
 description: The UnregisterExtensionForTypeSignature method undoes a prior call to the RegisterExtensionForTypeSignature method.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::UnregisterExtensionForTypeSignature
+ - IDataModelManager4::UnregisterExtensionForTypeSignature
 f1_keywords:
- - IDataModelManager3::UnregisterExtensionForTypeSignature
- - dbgmodel/IDataModelManager3::UnregisterExtensionForTypeSignature
+ - IDataModelManager4::UnregisterExtensionForTypeSignature
+ - dbgmodel/IDataModelManager4::UnregisterExtensionForTypeSignature
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -83,4 +83,4 @@ if (SUCCEEDED(spManager->UnregisterExtensionForTypeSignature(spDataModelObject.G
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.GetModelForType
+UID: NF:dbgmodel.IDataModelManager4.GetModelForType
 tech.root: debugger
-title: IDataModelManager3::GetModelForType
-ms.date: 11/20/2024
+title: IDataModelManager4::GetModelForType
+ms.date: 12/03/2024
 targetos: Windows
 description: The GetModelForType method returns the data model that is the canonical visualizer for a given type instance.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::GetModelForType
+ - IDataModelManager4::GetModelForType
 f1_keywords:
- - IDataModelManager3::GetModelForType
- - dbgmodel/IDataModelManager3::GetModelForType
+ - IDataModelManager4::GetModelForType
+ - dbgmodel/IDataModelManager4::GetModelForType
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -103,6 +103,7 @@ if (SUCCEEDED(spModule->FindTypeByName(L"MyType<int>", &spType)))
     }
 ```
 
+
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

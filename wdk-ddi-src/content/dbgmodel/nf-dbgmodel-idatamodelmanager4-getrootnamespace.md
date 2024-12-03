@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.GetRootNamespace
+UID: NF:dbgmodel.IDataModelManager4.GetRootNamespace
 tech.root: debugger
-title: IDataModelManager3::GetRootNamespace
-ms.date: 11/20/2024
+title: IDataModelManager4::GetRootNamespace
+ms.date: 12/03/2024
 targetos: Windows
 description: The GetRootNamespace method returns the data model's root namespace. This is an object which the data model manages and into which the debug host places certain objects.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::GetRootNamespace
+ - IDataModelManager4::GetRootNamespace
 f1_keywords:
- - IDataModelManager3::GetRootNamespace
- - dbgmodel/IDataModelManager3::GetRootNamespace
+ - IDataModelManager4::GetRootNamespace
+ - dbgmodel/IDataModelManager4::GetRootNamespace
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -94,4 +94,4 @@ if (SUCCEEDED(spManager->GetRootNamespace(&spRootNamespace)))
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

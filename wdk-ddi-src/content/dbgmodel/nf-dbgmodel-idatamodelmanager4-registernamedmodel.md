@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.RegisterNamedModel
+UID: NF:dbgmodel.IDataModelManager4.RegisterNamedModel
 tech.root: debugger
-title: IDataModelManager3::RegisterNamedModel
-ms.date: 11/20/2024
+title: IDataModelManager4::RegisterNamedModel
+ms.date: 12/03/2024
 targetos: Windows
 description: The RegisterNamedModel method registers a data model under a well known name so that it is easily discoverable.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::RegisterNamedModel
+ - IDataModelManager4::RegisterNamedModel
 f1_keywords:
- - IDataModelManager3::RegisterNamedModel
- - dbgmodel/IDataModelManager3::RegisterNamedModel
+ - IDataModelManager4::RegisterNamedModel
+ - dbgmodel/IDataModelManager4::RegisterNamedModel
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -106,6 +106,7 @@ if (SUCCEEDED(spManager->RegisterNamedModel(
 }
 ```
 
+
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

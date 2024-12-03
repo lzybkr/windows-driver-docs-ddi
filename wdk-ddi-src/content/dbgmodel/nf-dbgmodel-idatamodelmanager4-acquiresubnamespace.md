@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.AcquireSubNamespace
+UID: NF:dbgmodel.IDataModelManager4.AcquireSubNamespace
 tech.root: debugger
-title: IDataModelManager3::AcquireSubNamespace
-ms.date: 11/20/2024
+title: IDataModelManager4::AcquireSubNamespace
+ms.date: 12/03/2024
 targetos: Windows
 description: The AcquireSubNamespace method helps in the construction of something which might more traditionally look like a language namespace than a new object in a dynamic language.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::AcquireSubNamespace
+ - IDataModelManager4::AcquireSubNamespace
 f1_keywords:
- - IDataModelManager3::AcquireSubNamespace
- - dbgmodel/IDataModelManager3::AcquireSubNamespace
+ - IDataModelManager4::AcquireSubNamespace
+ - dbgmodel/IDataModelManager4::AcquireSubNamespace
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -138,4 +138,4 @@ if (SUCCEEDED(spManager->AcquireSubNamespace(
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

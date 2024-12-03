@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.GetModelForTypeSignature
+UID: NF:dbgmodel.IDataModelManager4.GetModelForTypeSignature
 tech.root: debugger
-title: IDataModelManager3::GetModelForTypeSignature
-ms.date: 11/20/2024
+title: IDataModelManager4::GetModelForTypeSignature
+ms.date: 12/03/2024
 targetos: Windows
 description: The GetModelForTypeSignature method returns the data model that was previously registered for a given type signature.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::GetModelForTypeSignature
+ - IDataModelManager4::GetModelForTypeSignature
 f1_keywords:
- - IDataModelManager3::GetModelForTypeSignature
- - dbgmodel/IDataModelManager3::GetModelForTypeSignature
+ - IDataModelManager4::GetModelForTypeSignature
+ - dbgmodel/IDataModelManager4::GetModelForTypeSignature
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -59,7 +59,6 @@ The data model which is registered as the canonical visualizer for all type inst
 ## -returns
 
 This method returns HRESULT that indicates success or failure.
-
 
 ## -remarks
 
@@ -106,4 +105,4 @@ if (SUCCEEDED(spHost.As(&spSym)))
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

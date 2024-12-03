@@ -1,12 +1,10 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.CreateDataModelObject
+UID: NF:dbgmodel.IDataModelManager4.CreateDataModelObject
 tech.root: debugger
-title: IDataModelManager3::CreateDataModelObject
-ms.date: 11/20/2024
+title: IDataModelManager4::CreateDataModelObject
+ms.date: 12/03/2024
 targetos: Windows
-description: The IDataModelManager3::createDataModelObject method is a simple helper wrapper for creating objects that are data models.
-ms.keywords: ["IDataModelManager3::CreateDataModelObject"]
-req.redist:
+description: The CreateDataModelObject method is a simple helper wrapper for creating objects that are data models.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -34,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::CreateDataModelObject
+ - IDataModelManager4::CreateDataModelObject
 f1_keywords:
- - IDataModelManager3::CreateDataModelObject
- - dbgmodel/IDataModelManager3::CreateDataModelObject
+ - IDataModelManager4::CreateDataModelObject
+ - dbgmodel/IDataModelManager4::CreateDataModelObject
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -112,4 +110,4 @@ if (spMyModel != nullptr)
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)

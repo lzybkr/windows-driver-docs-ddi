@@ -1,8 +1,8 @@
 ---
-UID: NF:dbgmodel.IDataModelManager3.RegisterExtensionForTypeSignature
+UID: NF:dbgmodel.IDataModelManager4.RegisterExtensionForTypeSignature
 tech.root: debugger
-title: IDataModelManager3::RegisterExtensionForTypeSignature
-ms.date: 11/20/2024
+title: IDataModelManager4::RegisterExtensionForTypeSignature
+ms.date: 12/03/2024
 targetos: Windows
 description: The RegisterExtensionForTypeSignature method registers a data model for a given type signature as an extension.
 prerelease: false
@@ -32,10 +32,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager3::RegisterExtensionForTypeSignature
+ - IDataModelManager4::RegisterExtensionForTypeSignature
 f1_keywords:
- - IDataModelManager3::RegisterExtensionForTypeSignature
- - dbgmodel/IDataModelManager3::RegisterExtensionForTypeSignature
+ - IDataModelManager4::RegisterExtensionForTypeSignature
+ - dbgmodel/IDataModelManager4::RegisterExtensionForTypeSignature
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -97,4 +97,4 @@ if (SUCCEEDED(spHost.As(&spSym)))
 
 ## -see-also
 
-[IDataModelManager3 interface](nn-dbgmodel-idatamodelmanager3.md)
+[IDataModelManager4 interface](nn-dbgmodel-idatamodelmanager4.md)
