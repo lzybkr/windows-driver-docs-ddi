@@ -20,7 +20,6 @@ req.max-support:
 req.namespace: 
 req.redist: 
 req.target-min-winverclnt: 
-req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
 req.umdf-ver: 
