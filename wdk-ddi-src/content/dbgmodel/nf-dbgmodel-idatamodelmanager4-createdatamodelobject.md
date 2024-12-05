@@ -65,7 +65,7 @@ This method returns HRESULT.
 **Sample Code**
 
 ```cpp
-ComPtr<IDataModelManager> spManager; /* get the data model manager */
+ComPtr<IDataModelManager4> spManager; /* get the data model manager */
 
 // We need some IDataModelConcept implementation.  Provide a 
 // minimal one for example purposes.

@@ -71,7 +71,7 @@ This method returns HRESULT that indicates success or failure.
 **Sample Code**
 
 ```cpp
-ComPtr<IDataModelManager2> spManager; /* get the data model manager */
+ComPtr<IDataModelManager4> spManager; /* get the data model manager */
 
 VARIANT vtValue;
 vtValue.vt = VT_I4;

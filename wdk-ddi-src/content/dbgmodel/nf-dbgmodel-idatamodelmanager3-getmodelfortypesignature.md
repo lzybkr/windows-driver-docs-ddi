@@ -54,19 +54,18 @@ A type signature for which dataModel will be registered as the canonical visuali
 
 ### -param dataModel
 
-The data model which is registered as the canonical visualizer for all type instances which match the given type signature (and for which there is no better matching type signature.
+The data model which is registered as the canonical visualizer for all type instances which match the given type signature and for which there is no better matching type signature.
 
 ## -returns
 
 This method returns HRESULT that indicates success or failure.
-
 
 ## -remarks
 
 **Sample Code**
 
 ```cpp
-ComPtr<IDataModelManager> spManager; /* get the data model manager */
+ComPtr<IDataModelManager3> spManager; /* get the data model manager */
 ComPtr<IDebugHost> spHost;           /* get the debug host */
 
 ComPtr<IModelObject> spDataModel;    /* create a data model (see 

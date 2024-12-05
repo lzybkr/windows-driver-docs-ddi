@@ -61,7 +61,7 @@ This method returns HRESULT that indicates success or failure.
 **Sample Code**
 
 ```cpp
-ComPtr<IDataModelManager> spManager;    /* get the data model manager */
+ComPtr<IDataModelManager3> spManager;    /* get the data model manager */
 
 if (SUCCEEDED(spManager->UnregisterNamedModel(
     L"Debugger.Models.Process.PrivateProcessExtension")))

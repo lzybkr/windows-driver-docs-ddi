@@ -75,7 +75,7 @@ This method returns HRESULT that indicates success or failure.
 ```cpp
 // As an example, create an instance of nt!_EPROCESS at address 0x100
 ComPtr<IDebugHost> spHost;           /* get the host */
-ComPtr<IDataModelManager> spManager; /* get the data model manager */
+ComPtr<IDataModelManager4> spManager; /* get the data model manager */
 
 ComPtr<IDebugHostSymbols> spSym;
 if (SUCCEEDED(spHost.As(&spSym)))

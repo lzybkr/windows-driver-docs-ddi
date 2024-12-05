@@ -55,7 +55,7 @@ This method returns HRESULT.
 **Sample Code**
 
 ```cpp
-ComPtr<IDataModelManager2> spManager2; /* get the data model manager */
+ComPtr<IDataModelManager4> spManager; /* get the data model manager */
 
 if (SUCCEEDED(spManager->Close()))
 {

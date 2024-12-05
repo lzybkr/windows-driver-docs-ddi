@@ -76,7 +76,7 @@ This method returns HRESULT that indicates success or failure.
 **Sample Code**
 
 ```cpp
-ComPtr<IDataModelManager2> spManager;    /* get the data model manager */
+ComPtr<IDataModelManager3> spManager;    /* get the data model manager */
 ComPtr<IModelObject> spDataModelObject; /* get your data model object (see
                                            CreateDataModelObject) */
 

@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-EnumeratateNamedModels returns an enumerator which will enumerate all registered named models and their associated name.
+EnumerateNamedModels returns an enumerator which will enumerate all registered named models and their associated name.
 
 ## -parameters
 

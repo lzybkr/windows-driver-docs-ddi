@@ -73,7 +73,7 @@ This method returns HRESULT.
 **Sample Code**
 
 ```cpp
-ComPtr<IDataModelManager> spManager; /* get the data model manager */
+ComPtr<IDataModelManager4> spManager; /* get the data model manager */
 
 ComPtr<IModelObject> spError;
 if (SUCCEEDED(spManager->CreateErrorObject(

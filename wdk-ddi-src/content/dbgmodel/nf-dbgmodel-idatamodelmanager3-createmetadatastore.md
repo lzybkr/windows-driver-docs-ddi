@@ -67,7 +67,7 @@ This method returns HRESULT which indicates success or failure.
 **Sample Code**
 
 ```cpp
-ComPtr<IDataModelManager> spManager; /* get the data model manager */
+ComPtr<IDataModelManager3> spManager; /* get the data model manager */
 
 // Create an empty key store (the usual case) which will be later filled with metadata.
 ComPtr<IKeyStore> spMetadata;

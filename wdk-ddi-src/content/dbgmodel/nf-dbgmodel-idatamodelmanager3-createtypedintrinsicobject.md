@@ -69,7 +69,7 @@ This method returns HRESULT which indicates success or failure.
 **Sample Code**
 
 ```cpp
-ComPtr<IDataModelManager> spManager; /* get the data model manager */
+ComPtr<IDataModelManager3> spManager; /* get the data model manager */
 ComPtr<IDebugHostType> spEnumType;   /* get an enum type (see CreateTypedObject) */
 ComPtr<IDebugHostType> spPtrType;    /* get a pointer type (see CreateTypedObject) */
 

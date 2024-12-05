@@ -58,7 +58,7 @@ Since the process object may have many other fields and there may be many things
 ```text
     • Process [foo.exe] 
         o Memory [A namespace of things associated with Memory in the process] 
-             Heaps   
+            - Heaps   
 ```
 
 If the Memory object above is simply a normal property which returns a new object, when a caller asks for someProcess.Memory.Heaps, the property accessor for the Heaps property will be passed a context object (this pointer) of the newly created Memory object with no easy way to get back to other attributes of the process. If the Memory object is instead created with the AcquireSubNamespace method, the paradigm looks as above excepting that the property accessor for anything on the Memory object will instead be the process object itself. This allows the Heaps property implementation to easily get back to other attributes of the process. This style of object is a sub-namespace instead of a sub-object. 
@@ -71,9 +71,9 @@ It is important to note that there is nothing which the AcquireSubNamespace meth
       o Creates and registers a new model under the name given by subNamespaceModelName
       o Acquires the model registered under the name given by modelName.
       o Adds a new property named according to accessName with metadata supplied by the metadata argument. The accessor for this property returns a new object with special properties: 
-         The new object has the model created and registered under subNamespaceModelName attached as a parent.
-         The parent model has a context adjustor. The context adjustor is a property.
-         The context adjustor property getter returns the original process object.
+        - The new object has the model created and registered under subNamespaceModelName attached as a parent.
+        - The parent model has a context adjustor. The context adjustor is a property.
+        - The context adjustor property getter returns the original process object.
 ```
 
 Once a sub-namespace is created, its ownership is considered shared amongst all potential callers of the AcquireSubNamespace method with the same set of arguments. As a shared ownership semantic, it is improper to unregister a sub-namespace arbitrarily.
@@ -109,7 +109,7 @@ This method returns HRESULT.
 **Sample Code**
 
 ```cpp
-ComPtr<IDataModelManager> spManager;   /* get the data model manager */
+ComPtr<IDataModelManager3> spManager;   /* get the data model manager */
 ComPtr<IModelObject> spExtensionModel; /* get a data model you want to extend 
                                           some namespace with (see
                                           CreateDataModelObject) */
