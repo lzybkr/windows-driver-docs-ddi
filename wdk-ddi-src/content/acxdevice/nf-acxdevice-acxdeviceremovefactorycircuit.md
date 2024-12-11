@@ -60,7 +60,9 @@ The ACX factory circuit to remove from the **WDFDEVICE** specified by the *Devic
 
 ## -remarks
 
-A typical driver won’t need to call **AcxDeviceRemoveFactoryCircuit**. This function should not be called if the factory circuit has created circuit devices that are still active.
+A typical driver won’t need to call **AcxDeviceRemoveFactoryCircuit**. This function should not be called if the factory circuit has created circuit devices that are still active. 
+
+If a driver decides to call this function for a factory circuit, the driver becomes responsible for first removing the circuit devices created through the associated factory circuit, *before* **AcxDeviceRemoveFactoryCircuit** is called.
 
 For more information about working with circuits see [ACX circuit dynamic removal](/windows-hardware/drivers/audio/acx-circuits#acx-circuit-dynamic-removal) and [ACX device enumeration](/windows-hardware/drivers/audio/acx-device-enumeration).
 
