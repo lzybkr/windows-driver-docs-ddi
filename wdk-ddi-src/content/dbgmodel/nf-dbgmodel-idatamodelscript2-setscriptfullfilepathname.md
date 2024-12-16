@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDataModelScript2.SetScriptFullFilePathName
-tech.root: 
+tech.root: debugger
 title: IDataModelScript2::SetScriptFullFilePathName
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: The SetScriptFullFilePathName method sets the full path name of the script file.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,9 +44,13 @@ helpviewer_keywords:
 
 ## -description
 
+The SetScriptFullFilePathName method sets the script full file path name. The method can be executed only once.
+
 ## -parameters
 
 ### -param scriptFullPathName
+
+A pointer to a wide string (PCWSTR) representing the full file path name of the script to be set.
 
 ## -returns
 
@@ -54,3 +58,4 @@ helpviewer_keywords:
 
 ## -see-also
 
+[IDataModelScript2 interface](nn-dbgmodel-idatamodelscript2.md)

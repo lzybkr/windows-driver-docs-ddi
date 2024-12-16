@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDataModelScript2.IsInvocable
-tech.root: 
+tech.root: debugger
 title: IDataModelScript2::IsInvocable
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: The IsInvocable method returns whether or not the script is invocable -- that is, whether it has a "main function" as defined by its language or provider.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,13 +44,22 @@ helpviewer_keywords:
 
 ## -description
 
+The IsInvocable method returns whether or not the script is invocable -- that is, whether it has a "main function" as defined by its language or provider. Such a "main function" is conceptually something that the script author would want called if an imaginary "Execute Script" button were pressed in a user interface. 
+
+This method is only legal to call after a successful call to the Execute method. Calling this method when a script has not yet executed (or has unlinked) is illegal and should produce an error.
+
 ## -parameters
 
 ### -param isInvocable
 
+An indication of whether the script is invocable is returned here.
+
 ## -returns
+
+This method returns HRESULT that indicates success or failure.
 
 ## -remarks
 
 ## -see-also
 
+[IDataModelScript2 interface](nn-dbgmodel-idatamodelscript2.md)

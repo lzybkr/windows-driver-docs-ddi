@@ -4,7 +4,7 @@ tech.root:
 title: IDataModelScript2::GetScriptFullFilePathName
 ms.date: 
 targetos: Windows
-description: 
+description: The GetScriptFullFilePathName method retrieves the full path name of the script file.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,9 +44,13 @@ helpviewer_keywords:
 
 ## -description
 
+The GetScriptFullFilePathName method retrieves the full file path name of a script.
+
 ## -parameters
 
 ### -param scriptFullPathName
+
+A pointer to a BSTR that will contain the full file path name of the script upon successful completion of the method.
 
 ## -returns
 
@@ -54,3 +58,4 @@ helpviewer_keywords:
 
 ## -see-also
 
+[IDataModelScript2 interface](nn-dbgmodel-idatamodelscript2.md)
