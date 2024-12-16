@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDebugHostContextAlternator.SwitchBack
-tech.root: 
+tech.root: debugger
 title: IDebugHostContextAlternator::SwitchBack
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: The SwitchBack method restores the debugger engine context to its previous state, reverting any temporary context changes made by the SwitchTo method.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,9 +44,14 @@ helpviewer_keywords:
 
 ## -description
 
+The SwitchBack method restores the debugger engine context to its previous state, reverting any temporary context changes made by the [SwitchTo method](nf-dbgmodel-idebughostcontextalternator-switchto.md). This allows the debugger to return to its original context, resuming normal operation.
+
 ## -returns
 
 ## -remarks
 
+Using the SwitchBack method is crucial for maintaining debugging consistency and continuity. Developers should invoke this method after using SwitchTo for a temporary context switch, especially if full access to the original context's functionalities is necessary.
+
 ## -see-also
 
+[IDebugHostContextAlternator interface](nn-dbgmodel-idebughostcontextalternator.md)

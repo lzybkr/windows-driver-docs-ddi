@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDebugHostContextAlternator.QueryInterface
-tech.root: 
+tech.root: debugger
 title: IDebugHostContextAlternator::QueryInterface
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: The QueryInterface method queries for a specific interface on the current context.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,15 +44,28 @@ helpviewer_keywords:
 
 ## -description
 
+Retrieves pointers to the supported interfaces on an object. This method calls IUnknown::AddRef on the pointer it returns. 
+
+For more information, see [IUnknown::QueryInterface](/windows/win32/api/Unknwn/nf-unknwn-iunknown-queryinterface(refiid_void)) and [Introduction to COM](/cpp/atl/introduction-to-com).
+
 ## -parameters
 
 ### -param iid
 
+The interface ID. A pointer to an existing object provided as input.
+
 ### -param iface
+
+The returned pointer to the requested COM interface.
 
 ## -returns
 
+This method returns HRESULT which indicates success or failure.
+
 ## -remarks
+
+Standard COM method.
 
 ## -see-also
 
+[IDebugHostContextAlternator interface](nn-dbgmodel-idebughostcontextalternator.md)
