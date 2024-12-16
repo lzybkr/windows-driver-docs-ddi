@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDebugHostBaseClass2.GetContainingModule
-tech.root: 
+tech.root: debugger
 title: IDebugHostBaseClass2::GetContainingModule
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: Returns the module which contains this symbol if the symbol has a containing module.  If the symbol does not have a containing module, an error is returned.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,13 +44,20 @@ helpviewer_keywords:
 
 ## -description
 
+Returns the module which contains this symbol if the symbol has a containing module.  If the symbol does not have a containing module, an error is returned.
+
 ## -parameters
 
 ### -param containingModule
 
+The module which contains the symbol will be returned here.
+
 ## -returns
+
+This method returns HRESULT that indicates success or failure.
 
 ## -remarks
 
 ## -see-also
 
+[IDebugHostBaseClass2 interface](nn-dbgmodel-idebughostbaseclass2.md)

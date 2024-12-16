@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDebugHostBaseClass2.GetContext
-tech.root: 
+tech.root: debugger
 title: IDebugHostBaseClass2::GetContext
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: The GetContext method, when called on a symbol, gets the host context in which the symbol is located.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,13 +44,33 @@ helpviewer_keywords:
 
 ## -description
 
+The GetContext method returns the context where the symbol is valid. While this will represent things such as the debug target and process/address space in which the symbol exists, it may not be as specific as a context retrieved from other means (e.g.: from an [IModelObject](nn-dbgmodel-imodelobject.md)).
+
 ## -parameters
 
 ### -param context
 
+The host context in which the symbol is located will be returned here.
+
 ## -returns
+
+This method returns HRESULT that indicates success or failure.
 
 ## -remarks
 
+**Code Sample**
+
+```cpp
+ComPtr<IDebugHostSymbol> spSymbol; /* get a symbol */
+
+ComPtr<IDebugHostContext> spContext;
+if (SUCCEEDED(spSymbol->GetContext(&spContext)))
+{
+    // spContext will contain the context that the symbol is within 
+    // (e.g.: session, process)
+}
+```
+
 ## -see-also
 
+[IDebugHostBaseClass2 interface](nn-dbgmodel-idebughostbaseclass2.md)

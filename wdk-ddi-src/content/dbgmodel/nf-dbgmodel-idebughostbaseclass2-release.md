@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDebugHostBaseClass2.Release
-tech.root: 
+tech.root: debugger
 title: IDebugHostBaseClass2::Release
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: The Release method decrements the reference count for an interface on an object.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,9 +44,16 @@ helpviewer_keywords:
 
 ## -description
 
+Decrements the reference count for an interface on an object. 
+
+For more information, see [IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) and [Introduction to COM](/cpp/atl/introduction-to-com).
+
 ## -returns
+
+This method returns ULONG.
 
 ## -remarks
 
 ## -see-also
 
+[IDebugHostBaseClass2 interface](nn-dbgmodel-idebughostbaseclass2.md)

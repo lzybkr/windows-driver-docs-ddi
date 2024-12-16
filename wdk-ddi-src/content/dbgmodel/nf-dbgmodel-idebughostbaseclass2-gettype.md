@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDebugHostBaseClass2.GetType
-tech.root: 
+tech.root: debugger
 title: IDebugHostBaseClass2::GetType
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: The GetType method, when called on a symbol, gets the type of symbol, such as int *.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,13 +44,18 @@ helpviewer_keywords:
 
 ## -description
 
+Returns the type, for example "int *", of the symbol if the symbol has a type.  If the symbol does not have a type, an error is returned.
+
 ## -parameters
 
 ### -param type
 
+The type of the symbol will be returned here.
+
 ## -returns
 
-## -remarks
+This method returns HRESULT that indicates success or failure.
 
 ## -see-also
 
+[IDebugHostBaseClass2 interface](nn-dbgmodel-idebughostbaseclass2.md)

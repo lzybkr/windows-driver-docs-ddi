@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDebugHostBaseClass2.GetOffset
-tech.root: 
+tech.root: debugger
 title: IDebugHostBaseClass2::GetOffset
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: The GetOffset method returns the offset of the base class from the base address of the derived class.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,13 +44,34 @@ helpviewer_keywords:
 
 ## -description
 
+The GetOffset method returns the offset of the base class from the base address of the derived class. Such offset may be zero or may be a positive unsigned 64-bit value.
+
 ## -parameters
 
 ### -param offset
 
+The offset of the base class from the base address of the derived class is returned here.
+
 ## -returns
+
+This method returns HRESULT that indicates success or failure.
 
 ## -remarks
 
+**Code Sample**
+
+```cpp
+ComPtr<IDebugHostBaseClass2> spBaseClass; /* get a base class symbol (see
+                                            EnumerateChildren) */
+
+ULONG64 offset;
+if (SUCCEEDED(spBaseClass->GetOffset(&offset)))
+{
+    // offset indicates the position of the base class relative to the 
+    // start of its parent class.
+}
+```
+
 ## -see-also
 
+[IDebugHostBaseClass2 interface](nn-dbgmodel-idebughostbaseclass2.md)

@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDebugHostBaseClass2.GetSymbolKind
-tech.root: 
+tech.root: debugger
 title: IDebugHostBaseClass2::GetSymbolKind
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: The GetSymbolKind method, when called on a symbol, gets the kind of symbol, such as field, base class, or type.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,13 +44,20 @@ helpviewer_keywords:
 
 ## -description
 
+Gets the kind of symbol that this is, for example a field, a base class, a type, etc.
+
 ## -parameters
 
 ### -param kind
 
+The kind of symbol (for example a type, field, base class, etc) will be returned here.
+
 ## -returns
+
+This method returns HRESULT that indicates success or failure.
 
 ## -remarks
 
 ## -see-also
 
+[IDebugHostBaseClass2 interface](nn-dbgmodel-idebughostbaseclass2.md)

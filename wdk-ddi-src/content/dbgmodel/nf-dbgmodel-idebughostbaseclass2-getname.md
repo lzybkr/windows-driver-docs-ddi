@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDebugHostBaseClass2.GetName
-tech.root: 
+tech.root: debugger
 title: IDebugHostBaseClass2::GetName
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: The GetName method, when called on a symbol, gets the name of the symbol if it has a name.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,13 +44,18 @@ helpviewer_keywords:
 
 ## -description
 
+Returns the name of the symbol if the symbol has a name.  If the symbol does not have a name, an error is returned.
+
 ## -parameters
 
 ### -param symbolName
 
+The name of the symbol will be returned here as a string allocated via the SysAllocString method.  The caller is responsible for freeing the allocated string via the SysFreeString method.
+
 ## -returns
 
-## -remarks
+This method returns HRESULT that indicates success or failure.
 
 ## -see-also
 
+[IDebugHostBaseClass2 interface](nn-dbgmodel-idebughostbaseclass2.md)
