@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDebugHostContext2.IsEqualTo
-tech.root: 
+tech.root: debugger
 title: IDebugHostContext2::IsEqualTo
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: Returns whether two IDebugHostContext objects are equal by value.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,15 +44,24 @@ helpviewer_keywords:
 
 ## -description
 
+Returns whether two [IDebugHostContext2](nn-dbgmodel-idebughostcontext2.md) objects are equal by value.  Note that there is no requirement for a debug host to have interface pointer equality for two contexts which are equivalent.  The actual contexts can be compared through this method.
+
 ## -parameters
 
 ### -param pContext
 
+The host context to compare against.
+
 ### -param pIsEqual
 
+An indication of whether the values of the two objects are equal.
+
 ## -returns
+
+This method returns HRESULT.
 
 ## -remarks
 
 ## -see-also
 
+[IDebugHostContext2 interface](nn-dbgmodel-idebughostcontext2.md)

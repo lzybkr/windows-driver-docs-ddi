@@ -1,10 +1,10 @@
 ---
 UID: NF:dbgmodel.IDebugHostContext2.AddRef
-tech.root: 
+tech.root: debugger
 title: IDebugHostContext2::AddRef
-ms.date: 
+ms.date: 12/16/2024
 targetos: Windows
-description: 
+description: The AddRef method increments the reference count for the context object.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,9 +44,16 @@ helpviewer_keywords:
 
 ## -description
 
+Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object. 
+
+For more information, see [IUnknown::AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) and [Introduction to COM](/cpp/atl/introduction-to-com).
+
 ## -returns
+
+This method returns ULONG.
 
 ## -remarks
 
 ## -see-also
 
+[IDebugHostContext2 interface](nn-dbgmodel-idebughostcontext2.md)
