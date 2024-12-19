@@ -58,8 +58,6 @@ A boolean value that indicates whether the switch should be a "full" context swi
 
 It allows for transitioning between different debugging contexts without committing to a permanent switch. This feature is useful in scenarios where developers want to test or inspect a particular context without losing the original debugging state.
 
-When using this method, it is important to note that, during a temporary switch, not all functionalities of the debugger may be functional or reliable. If the developer requires full access to all debugging capabilities, it is recommended to perform a full switch instead by passing true for the fullSwitch parameter.
-
 ## -see-also
 
 - [IDebugHostContextAlternator interface](nn-dbgmodel-idebughostcontextalternator.md)

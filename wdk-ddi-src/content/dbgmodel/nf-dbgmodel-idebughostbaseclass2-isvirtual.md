@@ -56,7 +56,7 @@ A pointer to a boolean that will be set to true if the base class is a virtual b
 
 ## -remarks
 
-If a base class is determined to be virtual, it signifies that the memory location cannot be resolved with a simple offset. In such cases, calling methods like GetOffset may fail, returning an error code of E_NOT_SET, and developers will need to utilize more sophisticated methods available through the IDebugHostBaseClass2 interface.
+If a base class is determined to be virtual, it signifies that the memory location cannot be resolved with a simple offset. In such cases, calling methods like GetOffset may fail, returning an error code of E_NOT_SET, and developers will need to utilize other methods available through the IDebugHostBaseClass2 interface.
 
 ## -see-also
 

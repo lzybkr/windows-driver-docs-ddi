@@ -54,7 +54,7 @@ A pointer to an IDebugHostContext2 instance representing the context to compare 
 
 ### -param pAddressSpaceRelation
 
-A pointer to an AddressSpaceRelation enum that will receive the result of the relationship between the two contexts' virtual memory spaces.
+A pointer to an [AddressSpaceRelation enum](ne-dbgmodel-addressspacerelation.md) that will receive the result of the relationship between the two contexts' virtual memory spaces.
 
 ## -returns
 

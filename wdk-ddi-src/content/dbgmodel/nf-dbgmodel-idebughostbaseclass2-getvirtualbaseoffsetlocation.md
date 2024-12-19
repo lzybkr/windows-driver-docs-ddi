@@ -67,6 +67,8 @@ A pointer to a boolean that indicates whether the offset read from the slot shou
 
 ## -remarks
 
+The location of the vtbl/vbtbl is (<object> + *pTableOffset) and the location of the offset within that table is given as (v[b]tbl + pSlotOffset).
+
 ## -see-also
 
 [IDebugHostBaseClass2 interface](nn-dbgmodel-idebughostbaseclass2.md)
