@@ -53,7 +53,7 @@ The Direct3D runtime's **pfnCreateContextCb** callback function creates a contex
 
 ### -param unnamedParam2
 
-[in/out] Pointer to a [**D3DDDICB_CREATECONTEXT**](ns-d3dumddi-d3dddicb_createcontext.md) structure that the driver fills with the necessary information for creating the context. This structure includes details such as node ordinal, engine affinity, and flags that specify the behavior and capabilities of the context to be created. Upon successful completion, the runtime updates this structure with information about the newly created context.
+[in/out] Pointer to a [**D3DDDICB_CREATECONTEXT**](ns-d3dumddi-_d3dddicb_createcontext.md) structure that the driver fills with the necessary information for creating the context. This structure includes details such as node ordinal, engine affinity, and flags that specify the behavior and capabilities of the context to be created. Upon successful completion, the runtime updates this structure with information about the newly created context.
 
 ## -returns
 
@@ -71,10 +71,10 @@ The user-mode display driver (UMD) must explicitly call **pfnCreateContextCb** f
 
 The context encapsulates state and command buffers that the GPU uses to perform rendering operations. UMD is responsible for managing the lifecycle of contexts it creates, including their eventual destruction to free up resources.
 
-For more information about the creation of a rendering device, see [Windows Display Driver Model (WDDM) operation flow](/windows-vista-and-later-display-driver-model-operation-flow).
+For more information about the creation of a rendering device, see [Windows Display Driver Model (WDDM) operation flow](/windows-hardware/drivers/display/windows-vista-and-later-display-driver-model-operation-flow).
 
 ## -see-also
 
-[**D3DDDICB_CREATECONTEXT**](ns-d3dumddi-d3dddicb_createcontext.md)
+[**D3DDDICB_CREATECONTEXT**](ns-d3dumddi-_d3dddicb_createcontext.md)
 
 [**pfnDestroyContextCb**](nc-d3dumddi-pfnd3dddi_destroycontextcb.md)
