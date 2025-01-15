@@ -2,7 +2,7 @@
 UID: NS:dispmprt._DXGK_DISPLAYMUX_INTERFACE
 tech.root: display
 title: DXGK_DISPLAYMUX_INTERFACE
-ms.date: 12/12/2024
+ms.date: 01/13/2024
 targetos: Windows
 description: Learn more about the DXGK_DISPLAYMUX_INTERFACE structure.
 prerelease: false
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: Windows 11, version 24H2, update 2025.01 (WDDM 3.2)
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGK_DISPLAYMUX_INTERFACE, *PDXGK_DISPLAYMUX_INTERFACE
@@ -47,7 +47,7 @@ helpviewer_keywords:
 
 ## -description
 
-The **DXGK_DISPLAYMUX_INTERFACE** structure contains pointers to functions that are implemented by the kernel-mode display miniport driver (KMD) to support [automatic display switching](/windows-hardware/drivers/display/automatic-display-switch).
+The **DXGK_DISPLAYMUX_INTERFACE** structure contains pointers to functions that are implemented by the kernel-mode display miniport driver (KMD) to support version 1 of the [automatic display switching](/windows-hardware/drivers/display/automatic-display-switch) feature. Version 1 was for the feature's pre-release; use [**DXGK_DISPLAYMUX_INTERFACE_V2**](nc-dispmprt-_dxgk_displaymux_interface_v2.md), which is the version released with Windows 11, version 24H2, update 2025.01 (WDDM 3.2).
 
 ## -struct-fields
 
@@ -117,10 +117,14 @@ The **DXGK_DISPLAYMUX_INTERFACE** structure contains pointers to functions that 
 
 ## -remarks
 
-The OS queries this interface along with the other interfaces at driver start.
+The OS queries for KMD's **DXGK_DISPLAYMUX_INTERFACE** at driver start. It does so by calling KMD's [**DxgkDdiQueryInterface**](nc-dispmprt-dxgkddi_query_interface.md) function with [**QueryInterface->InterfaceType**](../video/ns-video-_query_interface.md) set to GUID_WDDM_INTERFACE_DISPLAYMUX. If the KMD supports this interface, it returns a **DXGK_DISPLAYMUX_INTERFACE** structure with pointers to its automatic display switch callbacks.
 
 For more information, see [Automatic Display Switch](/windows-hardware/drivers/display/automatic-display-switch).
 
 ## -see-also
 
+[**DXGK_DISPLAYMUX_INTERFACE_V2**](nc-dispmprt-_dxgk_displaymux_interface_v2.md)
+
 [**DxgkDdiQueryInterface**](nc-dispmprt-dxgkddi_query_interface.md)
+
+[**QUERY_INTERFACE**](../video/ns-video-_query_interface.md)

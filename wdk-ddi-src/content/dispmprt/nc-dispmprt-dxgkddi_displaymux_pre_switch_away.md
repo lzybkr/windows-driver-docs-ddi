@@ -2,10 +2,10 @@
 UID: NC:dispmprt.DXGKDDI_DISPLAYMUX_PRE_SWITCH_AWAY
 tech.root: display
 title: DXGKDDI_DISPLAYMUX_PRE_SWITCH_AWAY
-ms.date: 12/12/2024
+ms.date: 01/13/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_DISPLAYMUX_PRE_SWITCH_AWAY function.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
@@ -44,6 +44,8 @@ helpviewer_keywords:
 
 ## -description
 
+*Dxgkrnl* calls the kernel-mode display driver's (KMD) **DxgkddiDisplayMuxPreSwitchAway** function to notify the driver that the display currently connected to it is about to be switched away to another GPU.
+
 ## -parameters
 
 ### -param DriverContext
@@ -52,13 +54,22 @@ helpviewer_keywords:
 
 ### -param VidPnTargetId
 
+[in] The VidPN target that the DDI is being called for.
+
 ### -param pSwitchPrivateDataSize
+
+[out] Pointer to a ULONG variable in which the driver writes the size in bytes of the switch private data that will be passed to the other GPU during the switch.
 
 ## -returns
 
+**DxgkddiDisplayMuxPreSwitchAway** returns STATUS_SUCCESS if it succeeds. Otherwise, it returns an appropriate NT_STATUS error code.
+
 ## -remarks
+
+This DDI is called under [synchronization level 2](/windows-hardware/drivers/display/threading-and-synchronization-second-level).
 
 For more information, see [Automatic Display Switch](/windows-hardware/drivers/display/automatic-display-switch).
 
 ## -see-also
 
+[**DxgkDdiDisplayMuxPreSwitchAwayGetPrivateData**](nc-dispmprt-dxgkddi_displaymux_pre_switch_away_get_private_data.md)

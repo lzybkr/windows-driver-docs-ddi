@@ -2,10 +2,10 @@
 UID: NC:dispmprt.DXGKDDI_DISPLAYMUX_REPORT_PRESENCE
 tech.root: display
 title: DXGKDDI_DISPLAYMUX_REPORT_PRESENCE
-ms.date: 12/12/2024
+ms.date: 01/13/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_DISPLAYMUX_REPORT_PRESENCE function.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
@@ -44,6 +44,8 @@ helpviewer_keywords:
 
 ## -description
 
+*Dxgkrnl* calls the kernel-mode display driver's (KMD) **DxgkddiDisplayMuxReportPresence** function before adapter start to inform the driver that an automatic display switch (ADS) mux has been detected.
+
 ## -parameters
 
 ### -param DriverContext
@@ -52,9 +54,15 @@ helpviewer_keywords:
 
 ### -param SystemHasMux
 
+[in] Boolean value that indicates whether the system has an ADS-compatible mux.
+
 ## -remarks
 
+This DDI is called under [synchronization level 2](/windows-hardware/drivers/display/threading-and-synchronization-second-level).
+
+**SystemHasMux** is set to TRUE when an ADS mux device was detected in the system and that mux device meets the ADS requirements. A TRUE value doesn't guarantee that ADS functionality will be available to user at this point in the boot sequence for the following reasons:
+
+* The other GPU involved with the ADS mux might not be started yet.
+* The OS has not yet verified all the ADS requirements for this driver.
+
 For more information, see [Automatic Display Switch](/windows-hardware/drivers/display/automatic-display-switch).
-
-## -see-also
-

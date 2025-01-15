@@ -2,10 +2,10 @@
 UID: NC:dispmprt.DXGKDDI_DISPLAYMUX_PRE_SWITCH_AWAY_GET_PRIVATE_DATA
 tech.root: display
 title: DXGKDDI_DISPLAYMUX_PRE_SWITCH_AWAY_GET_PRIVATE_DATA
-ms.date: 12/12/2024
+ms.date: 01/13/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_DISPLAYMUX_PRE_SWITCH_AWAY_GET_PRIVATE_DATA function.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
@@ -44,6 +44,8 @@ helpviewer_keywords:
 
 ## -description
 
+*Dxgkrnl* calls the **DxgkddiDisplayMuxPreSwitchAwayGetPrivateData** function of the kernel-mode display driver (KMD) currently connected to the panel to retrieve any private data from it.
+
 ## -parameters
 
 ### -param DriverContext
@@ -52,17 +54,30 @@ helpviewer_keywords:
 
 ### -param VidPnTargetId
 
+[in] The VidPN target that the DDI is being called for.
+
 ### -param SwitchPrivateDataSize
+
+[in] The size, in bytes, of the buffer that **pSwitchPrivateDataBuffer** points to. The driver provided this value to *Dxgkrnl* in a previous call to [**DxgkddiDisplayMuxPreSwitchAway**](nc-dispmprt-dxgkddi_displaymux_pre_switch_away.md).
 
 ### -param pSwitchPrivateDataBuffer
 
+[in] Pointer to the allocated buffer in which the driver should copy the switch private data to.
+
 ### -param pSwitchPrivateDataGUID
+
+[out] Pointer to a variable in which the driver should write the GUID that describes the switch private data. The driver must set a non-zero GUID.
 
 ## -returns
 
+**DxgkddiDisplayMuxPreSwitchAwayGetPrivateData** returns STATUS_SUCCESS if it succeeds. Otherwise, it returns an appropriate NT_STATUS error code.
+
 ## -remarks
+
+This DDI is called under [synchronization level 2](/windows-hardware/drivers/display/threading-and-synchronization-second-level).
 
 For more information, see [Automatic Display Switch](/windows-hardware/drivers/display/automatic-display-switch).
 
 ## -see-also
 
+[**DxgkddiDisplayMuxPreSwitchAway**](nc-dispmprt-dxgkddi_displaymux_pre_switch_away.md)

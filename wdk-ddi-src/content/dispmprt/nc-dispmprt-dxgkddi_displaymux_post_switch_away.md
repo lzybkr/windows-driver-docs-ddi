@@ -2,10 +2,10 @@
 UID: NC:dispmprt.DXGKDDI_DISPLAYMUX_POST_SWITCH_AWAY
 tech.root: display
 title: DXGKDDI_DISPLAYMUX_POST_SWITCH_AWAY
-ms.date: 12/12/2024
+ms.date: 01/13/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_DISPLAYMUX_POST_SWITCH_AWAY function.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
@@ -44,6 +44,8 @@ helpviewer_keywords:
 
 ## -description
 
+*Dxgkrnl* calls the kernel-mode display driver's (KMD) **DxgkddiDisplayMuxPostSwitchAway** function to notify the driver that it's no longer connected to the display.
+
 ## -parameters
 
 ### -param DriverContext
@@ -52,11 +54,20 @@ helpviewer_keywords:
 
 ### -param VidPnTargetId
 
+[in] The VidPN target that the DDI is being called for.
+
 ## -returns
 
+**DxgkddiDisplayMuxPostSwitchAway** returns STATUS_SUCCESS if it succeeds. Otherwise, it returns an appropriate error code.
+
 ## -remarks
+
+This DDI is called under [synchronization level 2](/windows-hardware/drivers/display/threading-and-synchronization-second-level).
 
 For more information, see [Automatic Display Switch](/windows-hardware/drivers/display/automatic-display-switch).
 
 ## -see-also
 
+[**DxgkddiDisplayMuxPostSwitchToPhase1**](nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase1.md)
+
+[**DxgkddiDisplayMuxPostSwitchToPhase2**](nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase2.md)
