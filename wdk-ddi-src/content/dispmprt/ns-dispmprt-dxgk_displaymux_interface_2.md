@@ -2,7 +2,7 @@
 UID: NS:dispmprt._DXGK_DISPLAYMUX_INTERFACE_2
 tech.root: display
 title: DXGK_DISPLAYMUX_INTERFACE_2
-ms.date: 01/13/2024
+ms.date: 01/13/2025
 targetos: Windows
 description: Learn more about the DXGK_DISPLAYMUX_INTERFACE_2 structure.
 prerelease: false
@@ -73,51 +73,51 @@ The **DXGK_DISPLAYMUX_INTERFACE_2** structure contains pointers to functions tha
 
 ### -field DxgkDdiDisplayMuxGetDriverSupportLevel
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxGetDriverSupportLevel**](nc-dispmprt-dxgkddidisplaymuxgetdriversupportlevel.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxGetDriverSupportLevel**](nc-dispmprt-dxgkddi_displaymux_get_driver_support_level.md) callback function.
 
 ### -field DxgkDdiDisplayMuxGetRuntimeStatus
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxGetRuntimeStatus**](nc-dispmprt-dxgkddidisplaymuxgetruntimestatus.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxGetRuntimeStatus**](nc-dispmprt-dxgkddi_displaymux_get_runtime_status.md) callback function.
 
 ### -field DxgkDdiDisplayMuxPreSwitchAway
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxPreSwitchAway**](nc-dispmprt-dxgkddidisplaymuxpreswitchaway.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxPreSwitchAway**](nc-dispmprt-dxgkddi_displaymux_pre_switch_away.md) callback function.
 
 ### -field DxgkDdiDisplayMuxPreSwitchAwayGetPrivateData
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxPreSwitchAwayGetPrivateData**](nc-dispmprt-dxgkddidisplaymuxpreswitchawaygetprivatedata.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxPreSwitchAwayGetPrivateData**](nc-dispmprt-dxgkddi_displaymux_pre_switch_away_get_private_data.md) callback function.
 
 ### -field DxgkDdiDisplayMuxPreSwitchTo
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxPreSwitchTo**](nc-dispmprt-dxgkddidisplaymuxpreswitchto.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxPreSwitchTo**](nc-dispmprt-dxgkddi_displaymux_pre_switch_to.md) callback function.
 
 ### -field DxgkDdiDisplayMuxSwitchCanceled
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxSwitchCanceled**](nc-dispmprt-dxgkddidisplaymuxswitchcanceled.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxSwitchCanceled**](nc-dispmprt-dxgkddi_displaymux_switch_canceled.md) callback function.
 
 ### -field DxgkDdiDisplayMuxPostSwitchAway
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxPostSwitchAway**](nc-dispmprt-dxgkddidisplaymuxpostswitchaway.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxPostSwitchAway**](nc-dispmprt-dxgkddi_displaymux_post_switch_away.md) callback function.
 
 ### -field DxgkDdiDisplayMuxPostSwitchToPhase1
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxPostSwitchToPhase1**](nc-dispmprt-dxgkddidisplaymuxpostswitchtophase1.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxPostSwitchToPhase1**](nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase1.md) callback function.
 
 ### -field DxgkDdiDisplayMuxPostSwitchToPhase2
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxPostSwitchToPhase2**](nc-dispmprt-dxgkddidisplaymuxpostswitchtophase2.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxPostSwitchToPhase2**](nc-dispmprt-dxgkddi_displaymux_post_switch_to_phase2.md) callback function.
 
 ### -field DxgkDdiDisplayMuxUpdateState
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxUpdateState**](nc-dispmprt-dxgkddidisplaymuxupdatestate.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxUpdateState**](nc-dispmprt-dxgkddi_displaymux_update_state.md) callback function.
 
 ### -field DxgkDdiDisplayMuxReportPresence
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxReportPresence**](nc-dispmprt-dxgkddidisplaymuxreportpresence.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxReportPresence**](nc-dispmprt-dxgkddi_displaymux_report_presence.md) callback function.
 
 ### -field DxgkDdiDisplayMuxSetInternalPanelInfo
 
-[out] Pointer to KMD's [**DxgkDdiDisplayMuxSetInternalPanelInfo**](nc-dispmprt-dxgkddidisplaymuxsetinternalpanelinfo.md) callback function.
+[out] Pointer to KMD's [**DxgkDdiDisplayMuxSetInternalPanelInfo**](nc-dispmprt-dxgkddi_displaymux_set_internal_panel_info.md) callback function.
 
 ## -remarks
 
@@ -129,7 +129,7 @@ For more information, see [Automatic Display Switch](/windows-hardware/drivers/d
 
 ## -see-also
 
-[**DxgkddiAddDevice**](nc-dispmprt-dxgkddiadddevice.md)
+[**DxgkddiAddDevice**](nc-dispmprt-dxgkddi_add_device.md)
 
 [**DxgkDdiQueryInterface**](nc-dispmprt-dxgkddi_query_interface.md)
 

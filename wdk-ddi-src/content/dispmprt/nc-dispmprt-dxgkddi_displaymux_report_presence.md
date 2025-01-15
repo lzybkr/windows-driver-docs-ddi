@@ -2,7 +2,7 @@
 UID: NC:dispmprt.DXGKDDI_DISPLAYMUX_REPORT_PRESENCE
 tech.root: display
 title: DXGKDDI_DISPLAYMUX_REPORT_PRESENCE
-ms.date: 01/13/2024
+ms.date: 01/13/2025
 targetos: Windows
 description: Learn more about the DXGKDDI_DISPLAYMUX_REPORT_PRESENCE function.
 prerelease: false

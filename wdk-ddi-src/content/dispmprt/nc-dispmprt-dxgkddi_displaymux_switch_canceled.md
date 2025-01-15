@@ -2,7 +2,7 @@
 UID: NC:dispmprt.DXGKDDI_DISPLAYMUX_SWITCH_CANCELED
 tech.root: display
 title: DXGKDDI_DISPLAYMUX_SWITCH_CANCELED
-ms.date: 01/13/2024
+ms.date: 01/13/2025
 targetos: Windows
 description: Learn more about the DXGKDDI_DISPLAYMUX_SWITCH_CANCELED function.
 prerelease: false
@@ -73,10 +73,10 @@ In general, the driver should revert any hardware or internal driver state that 
 | MuxSwitchedToTarget | Mux was switched to GPU before switch | Mux was switched away from GPU before switch |
 | --- | --- | --- |
 | FALSE | Ensure that the driver has turned off power to the internal panel, disabled brightness levels, and stopped sending brightness levels to the mux. The driver/GPU is ready for the next switch sequence. | Nothing |
-| TRUE  | If the driver already reported the lid as disconnected then add a new connection change packet to report the lid as connected again. The driver/GPU should be ready for the [**DxgkddiSettimingsfromvidpn**](nc-d3dkmddi-dxgkddi_settimingsfromvidpn.md) call that will occur shortly. On the next **DxgkddiSettimingsfromvidpn** call, the driver needs to ensure PSR is disabled. | If the driver hasn't already reported the lid as connected then add a connection change packet to report the lid as connected. The driver/GPU should be ready for **DxgkddiSettimingsfromvidpn** call that will occur shortly. On the next **DxgkddiSettimingsfromvidpn** call, the driver needs to ensure PSR is disabled. |
+| TRUE  | If the driver already reported the lid as disconnected then add a new connection change packet to report the lid as connected again. The driver/GPU should be ready for the [**DxgkddiSettimingsfromvidpn**](../d3dkmddi/nc-d3dkmddi-dxgkddi_settimingsfromvidpn.md) call that will occur shortly. On the next **DxgkddiSettimingsfromvidpn** call, the driver needs to ensure PSR is disabled. | If the driver hasn't already reported the lid as connected then add a connection change packet to report the lid as connected. The driver/GPU should be ready for **DxgkddiSettimingsfromvidpn** call that will occur shortly. On the next **DxgkddiSettimingsfromvidpn** call, the driver needs to ensure PSR is disabled. |
 
 For more information, see [Automatic Display Switch](/windows-hardware/drivers/display/automatic-display-switch).
 
 ## -see-also
 
-[**DxgkddiSettimingsfromvidpn**](nc-d3dkmddi-dxgkddi_settimingsfromvidpn.md)
+[**DxgkddiSettimingsfromvidpn**](../d3dkmddi/nc-d3dkmddi-dxgkddi_settimingsfromvidpn.md)

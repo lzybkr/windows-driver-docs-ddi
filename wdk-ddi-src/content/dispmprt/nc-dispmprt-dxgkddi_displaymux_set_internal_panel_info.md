@@ -58,7 +58,7 @@ helpviewer_keywords:
 
 ### -param pInternalPanelInfo
 
-[in] Pointer to a [**DXGK_DISPLAYMUX_SET_INTERNAL_PANEL_INFO**](ns-dispmprt-dxgk_displaymux_set_internal_panel_info.md) structure that contains information about the internal panel.
+[in] Pointer to a [**DXGK_DISPLAYMUX_SET_INTERNAL_PANEL_INFO**](../d3dkmdt/ns-d3dkmdt-dxgk_displaymux_set_internal_panel_info.md) structure that contains information about the internal panel.
 
 ## -returns
 
@@ -76,6 +76,6 @@ For more information, see [Automatic Display Switch](/windows-hardware/drivers/d
 
 ## -see-also
 
-[**DXGK_DISPLAYMUX_SET_INTERNAL_PANEL_INFO**](ns-dispmprt-dxgk_displaymux_set_internal_panel_info.md)
+[**DXGK_DISPLAYMUX_SET_INTERNAL_PANEL_INFO**](../d3dkmdt/ns-d3dkmdt-dxgk_displaymux_set_internal_panel_info.md)
 
 [**DxgkDdiDisplayMuxPreSwitchTo**](nc-dispmprt-dxgkddi_displaymux_pre_switch_to.md)

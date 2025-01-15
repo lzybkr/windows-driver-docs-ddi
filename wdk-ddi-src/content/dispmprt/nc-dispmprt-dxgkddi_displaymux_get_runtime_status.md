@@ -2,7 +2,7 @@
 UID: NC:dispmprt.DXGKDDI_DISPLAYMUX_GET_RUNTIME_STATUS
 tech.root: display
 title: DXGKDDI_DISPLAYMUX_GET_RUNTIME_STATUS
-ms.date: 01/13/2024
+ms.date: 01/13/2025
 targetos: Windows
 description: Learn more about the DXGKDDI_DISPLAYMUX_GET_RUNTIME_STATUS function.
 prerelease: false

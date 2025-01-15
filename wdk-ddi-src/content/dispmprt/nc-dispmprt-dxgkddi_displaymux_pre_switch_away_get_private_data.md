@@ -2,7 +2,7 @@
 UID: NC:dispmprt.DXGKDDI_DISPLAYMUX_PRE_SWITCH_AWAY_GET_PRIVATE_DATA
 tech.root: display
 title: DXGKDDI_DISPLAYMUX_PRE_SWITCH_AWAY_GET_PRIVATE_DATA
-ms.date: 01/13/2024
+ms.date: 01/13/2025
 targetos: Windows
 description: Learn more about the DXGKDDI_DISPLAYMUX_PRE_SWITCH_AWAY_GET_PRIVATE_DATA function.
 prerelease: false

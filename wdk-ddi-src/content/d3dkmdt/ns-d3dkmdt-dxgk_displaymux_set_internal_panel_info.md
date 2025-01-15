@@ -53,7 +53,7 @@ The **DXGK_DISPLAYMUX_SET_INTERNAL_PANEL_INFO** structure contains information a
 
 ### -field Brightness3Supported
 
-Boolean value that indicates whether the [**DXGK_BRIGHTNESS_INTERFACE_3**](ns-dispmprt-dxgk_brightness_interface_3.md) is supported by the GPU that the panel was initially connected to at boot time.
+Boolean value that indicates whether the [**DXGK_BRIGHTNESS_INTERFACE_3**](../dispmprt/ns-dispmprt-dxgk_brightness_interface_3.md) is supported by the GPU that the panel was initially connected to at boot time.
 
 ### -field Brightness3Caps
 

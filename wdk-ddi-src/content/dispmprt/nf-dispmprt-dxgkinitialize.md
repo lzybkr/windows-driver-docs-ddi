@@ -3,7 +3,7 @@ UID: NF:dispmprt.DxgkInitialize
 title: DxgkInitialize function (dispmprt.h)
 description: Learn more about the DxgkInitialize function.
 tech.root: display
-ms.date: 01/13/2024
+ms.date: 01/13/2025
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
